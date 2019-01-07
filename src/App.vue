@@ -8,17 +8,17 @@
         <img slot="icon" src="./assets/vux_logo.png">
         <span slot="label">首页</span>
       </tabbar-item>
-      <tabbar-item show-dot link="/Fly">
-        <img slot="icon" src="./assets/icon_nav_article.png">
-        <span slot="label">计划申请</span>
-      </tabbar-item>
-      <tabbar-item link="/Current">
+      <tabbar-item show-dot link="/List">
         <img slot="icon" src="./assets/icon_nav_msg.png">
-        <span slot="label">起飞申请</span>
+        <span slot="label">计划申请</span>
       </tabbar-item>
       <tabbar-item badge="2" link="/Chart">
         <img slot="icon" src="./assets/icon_nav_button.png">
         <span slot="label">统计</span>
+      </tabbar-item>
+      <tabbar-item link="/FeedBack">
+        <img slot="icon" src="./assets/icon_nav_article.png">
+        <span slot="label">意见反馈</span>
       </tabbar-item>
     </tabbar>
   </div>
@@ -42,6 +42,8 @@ export default {
       if (this.$route.path === '/Current') return '起飞申请'
       if (this.$route.path === '/Chart') return '数据统计'
       if (this.$route.path === '/Detail') return '申请详情'
+      if (this.$route.path === '/List') return '计划申请'
+      if (this.$route.path === '/FeedBack') return '意见反馈'
     },
     showBack() {
       console.log(this.$route.path)

@@ -10,6 +10,8 @@ import Chart from './components/chart.vue'
 import Fly from './components/flylist.vue'
 import Current from './components/currentlist.vue'
 import Detail from './components/datadetail.vue'
+import List from './components/datalist.vue'
+import FeedBack from './components/feedback.vue'
 
 Vue.use(VueRouter)
 Vue.use(VueAMap);
@@ -44,6 +46,14 @@ const routes = [
   {
     path: '/Detail',
     component: Detail
+  },
+  {
+    path: '/List',
+    component: List
+  },
+  {
+    path: '/FeedBack',
+    component: FeedBack
   }
 ]
 
