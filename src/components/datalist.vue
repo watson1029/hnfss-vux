@@ -138,7 +138,7 @@ export default {
             {
                 style: "primary",
                 text: '删除',
-                link: '#'
+                link: '/Detail'
             },
             {
                 style: "primary",
@@ -148,7 +148,7 @@ export default {
             {
                 style: "primary",
                 text: '提交',
-                link: '#'
+                link: '/Detail'
             }
         ],
         buttons2: [
@@ -160,19 +160,19 @@ export default {
             {
                 style: "default",
                 text: '回退',
-                link: '#'
+                link: '/Detail'
             },
             {
                 style: "primary",
                 text: '审核',
-                link: '#'
+                link: '/Detail'
             }
         ],
         buttons3: [
             {
                 style: "default",
                 text: '删除',
-                link: '#'
+                link: '/Detail'
             },
             {
                 style: "primary",
@@ -218,7 +218,7 @@ export default {
             {
                 style: "primary",
                 text: '起飞/降落报',
-                link: '#'
+                link: '/Detail'
             },
             {
                 style: "primary",
