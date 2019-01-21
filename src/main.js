@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
+import axios from 'axios'
 import VueAMap from 'vue-amap';
 import App from './App'
 import Home from './components/index.vue'
@@ -13,7 +14,8 @@ import Detail from './components/datadetail.vue'
 import List from './components/datalist.vue'
 import FeedBack from './components/feedback.vue'
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
+Vue.prototype.$ajax = axios;
 Vue.use(VueAMap);
 VueAMap.initAMapApiLoader({
   key: '21629f77ae3e6e8e9dd0c7da7db4af1c',
